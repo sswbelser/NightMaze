@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<hr>
+			<%= form_for :user, url: sessions_path, :html => { :multipart => true, :id => "login_form" } do |f| %>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<%= f.email_field :email, placeholder: "Email", class: "form-control" %>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<%= f.password_field :password, placeholder: "Password", class: "form-control" %>
+ 			</div>
+ 			<%= f.submit "Login", class: "btn btn-primary btn-block" %>
+ 			<% end %>
+
+			<br>
+			<p>Don't have an account? <%= link_to "Click here", signup_path%> to sign up</p>
+		</div>
+	</div>
+</div>
