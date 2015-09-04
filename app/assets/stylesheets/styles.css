@@ -1,5 +1,6 @@
 body {
-	
+	background: url('/images/background.jpg');
+	color: white;
 }
 
 .centered {
@@ -40,7 +41,13 @@ h1 {
 }
 
 #githubIcon {
-	color: red
+	background-color: black;
+	color: red;
+	border: 1px solid white;
+}
+
+.panel-body {
+	color: black;
 }
 
 /* jQuery Validation color */
@@ -94,7 +101,7 @@ div#unityPlayer {
 	cursor: default;
 	height: 600px;
 	width: 960px;
-	border: 1px solid black;
+	border: 1px solid white;
 }
 
 #about-ul {
@@ -112,6 +119,6 @@ div#unityPlayer {
 .about-image {
 	height: 500px;
 	border-radius: 25px;
-	padding:1px;
-	border:1px solid black;
+	padding: 1px;
+	border: 1px solid white;
 }
