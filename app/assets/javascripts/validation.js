@@ -55,38 +55,21 @@ $(function() {
 		}
 	});
 
-	// $("#new-post").validate({
-	// 	rules: {
-	// 		"post[body]": {
-	// 			required: true,
-	// 			minlength: 2,
-	// 			maxlength: 200
-	// 		}
-	// 	},
-	// 	messages: {
-	// 		"post[body]": {
-	// 			required: "Please enter a post",
-	// 			minlength: "Your post must be at least 2 characters",
-	// 			maxlength: "Your post must be shorter than 200 characters"
-	// 		}
-	// 	}
-	// });
-
-	// $("#edit-post").validate({
-	// 	rules: {
-	// 		"post[body]": {
-	// 			required: true,
-	// 			minlength: 2,
-	// 			maxlength: 200
-	// 		}
-	// 	},
-	// 	messages: {
-	// 		"post[body]": {
-	// 			required: "Please enter a post",
-	// 			minlength: "Your post must be at least 2 characters",
-	// 			maxlength: "Your post must be shorter than 200 characters"
-	// 		}
-	// 	}
-	// });
+	$("#new_post").validate({
+		rules: {
+			"post[text]": {
+				required: true,
+				minlength: 2,
+				maxlength: 200
+			}
+		},
+		messages: {
+			"post[text]": {
+				required: "Please enter a post",
+				minlength: "Your post must be at least 2 characters",
+				maxlength: "Your post must be shorter than 200 characters"
+			}
+		}
+	});
 
 });
