@@ -21,10 +21,32 @@ h1 {
 	margin-right: 1px;
 }
 
+#logout-button {
+	margin-right: 1px;
+}
+
 .get_unity {
 	width: 193;
 	height: 63;
 }
+
+/* jQuery Validation color */
+#new_user .error {
+    color: red;
+}
+
+#login_form .error {
+    color: red;
+}
+
+/*#new-post .error {
+    color: red;
+}
+
+#edit-post .error {
+    color: red;
+}*/
+/**/
 
 div.content {
 	margin: auto;
