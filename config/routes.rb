@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 	get "/about", to: "pages#show", as: :about
 
-	resources :users, only: [:create, :destroy]
+	resources :users, only: [:create]
 
 	resources :sessions, only: [:create]
 	get "/logout", to: "sessions#destroy", as: :logout
