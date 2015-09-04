@@ -16,8 +16,9 @@ Sabastian Belser's and Sean Hill's Unity project.
 
 #How to Bootstrap
 ```$ git clone```<br>
-```$ npm install```<br>
-```$ node server.js```
+```$ bundle install```<br>
+```$ rake db:create```<br>
+```$ rails s```
 
 #Trello Board and User Stories
 <a href="https://trello.com/b/2KAmptnM/project-3">Trello Board</a>

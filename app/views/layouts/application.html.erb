@@ -3,13 +3,16 @@
 <head>
 	<title>Spider Den</title>
 
+	<link rel='shortcut icon' href='./favicon.ico' type='image/x-icon'/ >
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	<!-- Bootstrap Optional CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= stylesheet_link_tag 'application', media: 'all' %>
+
 	<%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,8 +20,8 @@
 	<header>
 		<nav class="navbar navbar-inverse">
 			<div class="navbar-header">
-				<a class="navbar-brand"><%= image_tag("player.png", :alt => "logo", :class => "navbar_image") %></a>
-				<a class="navbar-brand" target="_blank" href="http://www.sswbelser.com">Made by SSWBelser</a>
+				<a class="navbar-brand"><%= image_tag("spider.png", :alt => "logo", :class => "navbar_image") %></a>
+				<a class="navbar-brand" target="_blank" href="https://github.com/sswbelser/Spider-Den">Spider Den</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -26,13 +29,67 @@
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="http://unity3d.com/unity/" target="_blank">Made with Unity</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="details-dropdown">Creators<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.sswbelser.com">Sabastian Belser</a></li>
+                            <li><a href="http://www.codingforsmiles.com">Sean Hill</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://unity3d.com/unity/" target="_blank">Made with Unity</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="signup-login" class="hidden">
+                    <a class="btn navbar-btn navbar-right btn-primary" data-toggle="modal" data-target="#signup-modal" id="signup-button">Sign Up</a>
+                    <a class="btn navbar-btn navbar-right btn-primary" data-toggle="modal" data-target="#login-modal">Login</a>
+                    <div class="modal fade" id="signup-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form id="signup-form">
+                                        <input type="text" name="username" class="form-control" placeholder="Username - Whatever you like" id="username-signup" autofocus>
+                                        <br>
+                                        <input type="password" name="password" class="form-control" placeholder="Password - Minimum six characters" id="password">
+                                        <br>
+                                        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm password" id="confirm_password">
+                                        <hr>
+                                        <div class="modal-buttons">
+                                            <input type="submit" value="Sign Up" class="btn btn-primary">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="login-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form id="login-form">
+                                        <input type="text" name="username" class="form-control" placeholder="Username" id="username-login" autofocus>
+                                        <br>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" id="password-login" required>
+                                        <hr>
+                                        <div class="modal-buttons">
+                                            <input type="submit" value="Login" class="btn btn-primary">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="logged-in" class="hidden">
+                    <a class="btn navbar-btn navbar-right btn-danger" id="logout-button">Logout</a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navbar-right"><h7 id="login-name"></h7></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 	<%= yield %>
 
