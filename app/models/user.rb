@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 
+	has_many :posts, dependent: :destroy
 	has_secure_password
 	validates :email, presence: true, 
 					  length: {minimum: 2},
