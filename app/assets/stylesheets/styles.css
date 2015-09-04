@@ -16,6 +16,11 @@ h1 {
 	border-radius: 25%;
 }
 
+#signup-button {
+	margin-left: 10px;
+	margin-right: 1px;
+}
+
 .get_unity {
 	width: 193;
 	height: 63;

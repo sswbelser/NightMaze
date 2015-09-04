@@ -21,18 +21,7 @@
 		<nav class="navbar navbar-inverse">
 			<div class="navbar-header">
 				<a class="navbar-brand"><%= image_tag("spider.png", :alt => "Logo", :class => "navbar_image") %></a>
-				<ul class="nav navbar-nav">
-					<li class="dropdown">
-						<a class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="details-dropdown">Spider Den<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://www.sswbelser.com" target="_blank">Sabastian Belser</a></li>
-							<li><a href="http://www.codingforsmiles.com" target="_blank">Sean Hill</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="https://github.com/sswbelser/Spider-Den" target="_blank">GitHub</a></li>
-							<li><a href="http://unity3d.com/unity/" target="_blank">Made with Unity</a></li>
-						</ul>
-					</li>
-				</ul>
+				<a class="navbar-brand" href="/">Spider Den</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -41,14 +30,35 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/about">About</a></li>
+			</ul>
 			<% if logged_in? %>
 				<a class="btn navbar-btn navbar-right btn-warning" href="/logout">Log out</a>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a class="navbar-header">Welcome, <%= current_user.username %></a></li>
+					<li><a class="navbar-header" href="/edit-user">Welcome, <%= current_user.username %></a></a></li>
 				</ul>
 			<% else %>
-				<a class="btn navbar-btn navbar-right btn-default" href="/login">Login</a>
-				<a class="btn navbar-btn navbar-right btn-primary" href="/signup">Sign Up</a>
+				<a class="btn navbar-btn navbar-right btn-default" data-toggle="modal" data-target="#signup-modal" id="signup-button">Sign Up</a>
+                <a class="btn navbar-btn navbar-right btn-primary" data-toggle="modal" data-target="#login-modal">Login</a>
+                <div class="modal fade" id="signup-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <%= render "userform" %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="login-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <%= render "loginform" %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			<% end %>
 			</div>
 		</nav>
