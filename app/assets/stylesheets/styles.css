@@ -51,22 +51,13 @@ h1 {
 }
 
 /* jQuery Validation color */
-#new_user .error {
-    color: red;
-}
-
-#login_form .error {
-    color: red;
-}
-
+#new_user .error,
+#login_form .error,
 #new_post .error {
-    color: red;
+	color: red;
 }
 
-/*#edit-post .error {
-    color: red;
-}
-*//**/
+/**/
 
 div.content {
 	margin: auto;
