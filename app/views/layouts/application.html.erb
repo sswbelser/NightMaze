@@ -44,25 +44,25 @@
 				</ul>
 			<% else %>
 				<a class="btn navbar-btn navbar-right btn-default" data-toggle="modal" data-target="#signup-modal" id="signup-button">Sign Up</a>
-                <a class="btn navbar-btn navbar-right btn-primary" data-toggle="modal" data-target="#login-modal">Login</a>
-                <div class="modal fade" id="signup-modal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <%= render "signupform" %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="login-modal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <%= render "loginform" %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<a class="btn navbar-btn navbar-right btn-primary" data-toggle="modal" data-target="#login-modal">Login</a>
+				<div class="modal fade" id="signup-modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<%= render "signupform" %>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="login-modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<%= render "loginform" %>
+							</div>
+						</div>
+					</div>
+				</div>
 			<% end %>
 			</div>
 		</nav>
