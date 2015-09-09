@@ -1,19 +1,19 @@
 @font-face {
 	font-family: 'Amped-For-Evil';
-	src: font-url('Amped-For-Evil.ttf.woff') format('woff'),
-		 font-url('Amped-For-Evil.ttf.svg#Amped-For-Evil') format('svg'),
-		 font-url('Amped-For-Evil.ttf.eot'),
-		 font-url('Amped-For-Evil.ttf.eot?#iefix') format('embedded-opentype'); 
+	src: url('Amped-For-Evil.ttf.woff') format('woff'),
+		 url('Amped-For-Evil.ttf.svg#Amped-For-Evil') format('svg'),
+		 url('Amped-For-Evil.ttf.eot'),
+		 url('Amped-For-Evil.ttf.eot?#iefix') format('embedded-opentype'); 
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Haunted-Regular';
-	src: font-url('Haunted-Regular.ttf.woff') format('woff'),
-		 font-url('Haunted-Regular.ttf.svg#Haunted-Regular') format('svg'),
-		 font-url('Haunted-Regular.ttf.eot'),
-		 font-url('Haunted-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+	src: url('Haunted-Regular.ttf.woff') format('woff'),
+		 url('Haunted-Regular.ttf.svg#Haunted-Regular') format('svg'),
+		 url('Haunted-Regular.ttf.eot'),
+		 url('Haunted-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
 	font-weight: normal;
 	font-style: normal;
 }
