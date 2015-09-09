@@ -1,8 +1,9 @@
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
+		<h3 class="centered">New Post</h3>
+		<hr>
 		<%= form_for @post do |f| %>
 		<div class="form-group">
-			<label for="text">New Post</label>
 			<%= f.text_area :text, placeholder: "Enter post", autofocus: true, class: "form-control" %>
 		</div>
 		<%= f.submit class: "btn btn-danger btn-block" %>

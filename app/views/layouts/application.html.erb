@@ -38,9 +38,9 @@
 				<li><a href="/about">About</a></li>
 			</ul>
 			<% if logged_in? %>
-				<a class="btn navbar-btn navbar-right btn-warning" href="/logout" id="logout-button">Log out</a>
+				<a class="btn navbar-btn navbar-right btn-danger" href="/logout" id="logout-button">Log out</a>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a class="navbar-header">Welcome, <%= current_user.username %></a></a></li>
+					<li><a class="navbar-header">Welcome, <%= current_user.username %></a></li>
 				</ul>
 			<% else %>
 				<a class="btn navbar-btn navbar-right btn-default" data-toggle="modal" data-target="#signup-modal" id="signup-button">Sign Up</a>

@@ -3,6 +3,10 @@ body {
 	color: white;
 }
 
+.modal {
+	color: black;
+}
+
 .centered {
 	text-align: center;
 }
@@ -44,6 +48,10 @@ h1 {
 	background-color: black;
 	color: red;
 	border: 1px solid white;
+}
+
+#githubIcon:hover {
+	background-color: gray;
 }
 
 .panel-body {
