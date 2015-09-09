@@ -1,22 +1,27 @@
 <div class="container">
 	<div class="centered">
-		<h1>About Spider Den</h1>
+		<h1 class="creepy-text">About Spider Den</h1>
 		<a href="https://github.com/sswbelser/Spider-Den" class="btn btn-round btn-clear btn-github" id="githubIcon" target="_blank"><i class="fa fa-github-square fa-4x"></i></a>
 	</div>
 	<hr>
 	<div class="row">
 		<div class="col-md-6 about-div">
-			<h3>A Storm-Hill Game</h3>
-			<p>Texty texty text. Made with <a href="http://unity3d.com/unity/" target="_blank">Unity</a></p>
-			<%= image_tag("team.jpg", class: "about-image") %>
+			<h3 class="centered creepy-text">A Storm-Hill Game</h3>
+			<p>Whatever McSweeney's iPhone, messenger bag 90's roof party tote bag chillwave. Direct trade normcore DIY, cliche typewriter Banksy cardigan four loko Odd Future artisan organic shabby chic tofu Austin semiotics. 90's keffiyeh kogi, Neutra squid tilde ennui meh organic paleo twee semiotics fanny pack. Seitan gentrify brunch bespoke, biodiesel pop-up roof party artisan Blue Bottle. Austin YOLO raw denim, taxidermy pug Banksy American Apparel Brooklyn fixie locavore gastropub quinoa. XOXO meh synth mlkshk. Banksy skateboard fanny pack paleo beard.<br><br>
+
+			Sustainable gentrify brunch, skateboard polaroid wolf you probably haven't heard of them art party food truck lo-fi ennui bitters. Church-key tattooed kitsch ethical, American Apparel readymade 8-bit Bushwick brunch biodiesel. Narwhal skateboard PBR Schlitz flexitarian. Migas Wes Anderson health goth, farm-to-table mustache paleo Vice meditation locavore Williamsburg. Mumblecore bespoke church-key, ennui food truck hella VHS fanny pack small batch wayfarers vinyl direct trade kitsch. Shabby chic taxidermy pop-up Neutra, deep v meggings ethical sartorial synth. Four dollar toast put a bird on it blog, Neutra tattooed readymade kale chips YOLO tousled Thundercats Kickstarter squid small batch Intelligentsia.<br><br>
+
+			Made with <a href="http://unity3d.com/unity/" target="_blank">Unity</a></p>
+			<%= image_tag("storm_hill.jpg", class: "about-image") %>
 			<ul id="about-ul">
 				<li><a href="http://www.sswbelser.com" target="_blank">Sabastian Belser</a></li>
-				<li><a href="http://www.codingforsmiles.com" target="_blank">Sean Hill</a></li>
+				<li><a href="http://www.codingforsmiles.com" target="_blank" class="sean">Sean Hill</a></li>
 			</ul>
+			<br><br>
 		</div>
 		<div class="col-md-6">
 			<!-- Posts -->
-			<h3 class="centered">What do you think?</h3>
+			<h3 class="centered creepy-text">What do you think?</h3>
 			<br>
 			<div class="centered">
 				<a class="btn btn-danger" data-toggle="modal" data-target="#post-modal" id="post-button">New Post</a>
@@ -34,10 +39,10 @@
 			<% @posts.each do |post| %>
 				<div class="panel panel-danger">
 					<div class="panel-heading">
-						<p><%= post.user.username %></p>
+						<h4 class="creepy-text"><%= post.user.username %></h4>
 					</div>
 					<div class="panel-body">
-						<h4><%= post.text %></h4>
+						<p><%= post.text %></p>
 						<% if post.user == current_user %>
 							<%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, post_path(post), class: "btn", method: :delete, data: { confirm: 'Are you sure?' } %>
 						<% end %>
