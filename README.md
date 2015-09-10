@@ -37,8 +37,8 @@ With level one finished, we are eager to get back to work and design many more m
 </ul>
 
 #How to Bootstrap
-```$ git clone```<br>
 Turn on PostgreSQL<br>
+```$ git clone```<br>
 ```$ bundle install```<br>
 ```$ rake db:create```<br>
 ```$ rails s```
