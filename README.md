@@ -11,7 +11,8 @@ You have slipped into a deep pit with no visible way out. As you turn on your fl
 #Project Creation Approach
 We began NightMaze with a basic understanding of what the Unity Engine had to offer. Our plan was to incorporate the features we knew as quickly as possible and using the remaining time to learn and impliment new, exciting, and more efficient features.<br><br>
 The first step we took was to build the maze. We followed tutorials and created a random maze generator and imported a maze into our project. We dimmed the lights in the editor, threw in some spooky music, and started adding in enemies. After hours of playing against the never ending monster spawns we decided to add a spawn limit and a way to escape from the maze.<br><br>
-With level one finished we are eager to get back to work and design many more mazes to find your way through!
+Lastly, we built out the Ruby on Rails web app to hold the web player version of the game; which we ultimately hosted on <a href="https://nightmaze.herokuapp.com" target="_blank">Heroku</a>. This has login/signup functionality, add posts, and various other technologies. However, we would eventually like to ship this game to the App Store and Google Play.<br><br>
+With level one finished, we are eager to get back to work and design many more mazes to find your way through!
 
 #Trello Board and User Stories
 <a href="https://trello.com/b/2KAmptnM/project-3" target="_blank">Trello Board</a>
