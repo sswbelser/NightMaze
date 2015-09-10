@@ -2,8 +2,8 @@
 Sabastian Belser's and Sean Hill's Unity project.
 
 #Live
-<a href="https://nightmaze.herokuapp.com">Heroku</a><br>
-<a href="https://www.dropbox.com/sh/kfw6z3qoqsw2qcr/AABYp8yzrxoD1jC7KqNwxbela?dl=0">Dropbox Download</a>
+<a href="https://nightmaze.herokuapp.com" target="_blank">Heroku</a><br>
+<a href="https://www.dropbox.com/sh/kfw6z3qoqsw2qcr/AABYp8yzrxoD1jC7KqNwxbela?dl=0" target="_blank">Dropbox Download</a>
 
 #Elevator Pitch
 You have slipped into a deep pit with no visible way out. As you turn on your flashlight you find that you are in some sort of maze. It is dark and you hear noises. You have to run. You have to escape! NightMaze is an exciting first person maze runner with the goal of surviving the monsters of the maze and finding the way out. You are trapped in the maze with just a flashlight and a weapon. Can you make it?
@@ -14,7 +14,7 @@ The first step we took was to build the maze. We followed tutorials and created 
 With level one finished we are eager to get back to work and design many more mazes to find your way through!
 
 #Trello Board and User Stories
-<a href="https://trello.com/b/2KAmptnM/project-3">Trello Board</a>
+<a href="https://trello.com/b/2KAmptnM/project-3" target="_blank">Trello Board</a>
 
 #Technologies Used
 <ul>
