@@ -5,7 +5,7 @@
 		<%= form_for :user, url: sessions_path, :html => { :multipart => true, :id => "login_form" } do |f| %>
 		<div class="form-group">
 			<label for="email">Email</label>
-			<%= f.email_field :email, placeholder: "Email", class: "form-control" %>
+			<%= f.email_field :email, placeholder: "Email", autofocus: true, class: "form-control" %>
 		</div>
 		<div class="form-group">
 			<label for="password">Password</label>
