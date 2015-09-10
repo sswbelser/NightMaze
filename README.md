@@ -2,7 +2,7 @@
 Sabastian Belser's and Sean Hill's Unity project.
 
 #Live
-<a href="https://nightmaze.herokuapp.com">Heroku</a>
+<a href="https://nightmaze.herokuapp.com">Heroku</a><br><br>
 <a href="https://www.dropbox.com/sh/kfw6z3qoqsw2qcr/AABYp8yzrxoD1jC7KqNwxbela?dl=0">Dropbox Download</a>
 
 #Elevator Pitch
