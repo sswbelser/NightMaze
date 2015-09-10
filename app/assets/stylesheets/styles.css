@@ -121,7 +121,7 @@ div#unityPlayer {
 	text-decoration: underline;
 }
 
-#about-ul li a.sean {
+#about-ul li a#sean {
 	margin-right: -50px;
 	margin-left: 50px;
 }
