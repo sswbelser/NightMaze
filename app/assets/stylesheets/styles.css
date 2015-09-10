@@ -34,7 +34,6 @@ body {
 
 .about-div {
 	border-right-style: solid;
-	text-align: center;
 }
 
 .get_unity {
@@ -105,7 +104,7 @@ div#unityPlayer {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	text-align: center;
+
 }
 
 #about-ul li {
@@ -118,8 +117,8 @@ div#unityPlayer {
 }
 
 #about-ul li a#sean {
-	margin-right: -50px;
-	margin-left: 50px;
+	margin-right: -30px;
+	margin-left: 30px;
 }
 
 .about-image {
